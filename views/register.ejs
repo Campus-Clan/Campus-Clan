@@ -1,0 +1,82 @@
+<%-include('partial/header')-%>
+
+	<body>
+
+		<script
+			type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<nav class="navbar navbar-expand-lg " style="background: transparent; box-shadow: none;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="images/Campus tribe-1.png" alt=""></a>
+			</div>
+		</nav>
+
+		<div class="container">
+
+			<h3>Hello There!</h3>
+			<div class="main-agileinfo">
+				<div class="agileits-top">
+
+
+					<form action="/register" method="POST">
+						<div class="cred">
+							<div class="input-grp name">
+								<input required="" type="text" name="firstname" autocomplete="off" class="credential ">
+								<label class="user-label">First Name</label>
+							</div>
+							<div class="input-grp name">
+								<input required="" type="text" name="lastname" autocomplete="off" class="credential ">
+								<label class="user-label">Last Name</label>
+							</div>
+							<div class="input-grp">
+								<input required="" type="email" name="username" autocomplete="off"
+									class="credential credbody">
+								<label class="user-label">Email</label>
+							</div>
+							<div class="input-grp">
+								<input required="" type="password" name="password" autocomplete="off"
+									class="credential credbody">
+								<label class="user-label">Password</label>
+							</div>
+
+						</div>
+
+						<label class="checkbox">
+							<input type="checkbox" required>
+							<span class="checkmark"></span>
+							<span class="text">Agree With TnC</span>
+						</label>
+
+						<input type="submit" value="SIGNUP">
+					</form>
+				</div>
+
+				<hr class="hr-text" data-content="or Continue With">
+
+				<div class="social-icons">
+					<a class="social-icon google" href="/auth/google" role="button">
+						<i class="fa-brands fa-google"></i>
+					</a>
+
+					<a class="social-icon facebook" href="/auth/google" role="button">
+						<i class="fa-brands fa-facebook fa-xl"></i>
+					</a>
+
+					<a class="social-icon github" href="/auth/google" role="button">
+						<i class="fa-brands fa-github fa-xl"></i>
+					</a>
+				</div>
+				<p class="signup">Already a user?
+					<a rel="noopener noreferrer" href="login" class="">Sign in</a>
+				</p>
+			</div>
+
+		</div>
+
+		<!-- //main -->
+
+		<script
+			type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+	</body>
+	<%-include('partial/footer')-%>
